@@ -1,7 +1,7 @@
-# Ulefone Metal - Unofficial CyanogenMod 13.0
+# Ulefone Metal - CyanogenMod 14.0/AOSP7.0
 ==============
 
-This branch is device for building of the Unofficial CyanogenMod 13.0.
+This branch is device for building of the CyanogenMod 14.0 and Android Nougat 7.0 AOSP ROMs. For more information about building the ROM, read our [build manual](manual).
 
 ---
 
@@ -28,28 +28,31 @@ Front Camera | 2MP/Int. 5MP (OV)
 
 # Build Information
 
-## Working:
-* Booting.....
-* USB
-* WiFi
-* Touch
-* Torch
-* FM Radio
-* FM Radio with Speaker
-* FM Radio record
-* Hardware Key
-* Light
-* MicroSD
-* Vibration
-* Rotation
-* Panorama
-* Bluetooth
-* Sensor
-* Gyro
-* Audio Speaker
-* Headphones
-* AudioFx
-* Fingerprint
+### In progress(only for cm-14.0):
+ * Hardware acceleration
+ * Wi-Fi
+ * Offline charging
+ * GPS
+ * AGPS
+ * Vibration
+ * Audio
+ * Auto brightness
+ * Doze
+ * RAM and ROM
+ * Rotation
+ * All sensors
+ * NFC (payments, pairing .etc)
+ * Lazer autofocus
+ * Flashlight (statusbar and camera)
+ * Bluetooth
+ * Camera rear/front (video and photo)
+ * Micro SD support
+ * MTP and Mass Storage modes
+ * Audio over Bluetooth (music, calls .etc)
+ * Fingerprint scanner
+ * Wi-Fi tethering
+ * HOME Button like in stock
+ * Special button new functional
 
 
 ## Broken/Bugs
@@ -67,6 +70,7 @@ Front Camera | 2MP/Int. 5MP (OV)
  * Deepflex
  * Wuxianlin
  * Ferhung
+ * SHVED
  * Xen0n
  * Leskal
  * JonnyXDA

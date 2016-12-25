@@ -7,4 +7,4 @@ TARGET_OTA_ASSERT_DEVICE := metal,METAL,ulefone,Ulefone,wtk6753_65u_m0,Metal
 USE_MINIKIN := true
 
 #Use dlmalloc instead of jemalloc for mallocs
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true

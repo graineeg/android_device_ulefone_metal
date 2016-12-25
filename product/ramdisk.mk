@@ -4,7 +4,6 @@ PRODUCT_PACKAGES += \
     factory_init.project.rc \
     factory_init.rc \
     fstab.mt6735 \
-    init.rc \
     init.aee.rc \
     init.modem.rc \
     init.common_svc.rc \
@@ -17,3 +16,7 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     meta_init.rc \
     ueventd.mt6735.rc
+
+# Properly input of init.rc
+PRODUCT_COPY_FILES := \
+     $(LOCAL_PATH)/rootdir/init.rc:root/init.rc

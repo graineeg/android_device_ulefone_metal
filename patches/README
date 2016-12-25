@@ -1,5 +1,0 @@
-This is patch directory
-
-cd WORKING_DIR
-sh device/ulefone/metal/patches/install.sh
-sh device/ulefone/metal/patches/uninstall.sh

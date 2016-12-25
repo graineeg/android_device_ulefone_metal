@@ -1,6 +1,6 @@
 How to make a patches after changes in CM source code:
 
-Cd Working_dir (For example: Cd cm13/frameworks/base)
+Cd Working_dir (For example: Cd cm/frameworks/base)
 git status
 git add .
 git commit -m "name of patch"
@@ -15,7 +15,16 @@ cd Working_dir
 After apply patches:
 sh device/ulefone/metal/patches/install.sh
 Write
-. build/envsetup.sh && breakfast metal
-And
+
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
+
+./prebuilts/sdk/tools/jack-admin kill-server
+
+./prebuilts/sdk/tools/jack-admin start-server
+
+export USE_NINJA=false && unset BUILDING_WITH_NINJA
+
+. build/envsetup.sh
+
 brunch metal
-Wait of finish, for me ~50mins
+Wait of finish, for me ~5hr

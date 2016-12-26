@@ -48,6 +48,3 @@ TARGET_PROVIDES_INIT_RC := true
 
 # System.prop
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-
-# Vold
-TARGET_USE_CUSTOM_LUN_FILE_PATH := sys/class/android_usb/android0/f_mass_storage/lun/file

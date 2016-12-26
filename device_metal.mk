@@ -22,19 +22,23 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Device specific overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Headers
+TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
+
 # Device product elements
 include $(LOCAL_PATH)/product/*.mk
 
 # Dalvik heap configurations
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-3072-dalvik-heap.mk)
 
 # Call hwui memory config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-3072-hwui-memory.mk)
 
 # Product common configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Vendor product configurations
 $(call inherit-product-if-exists, vendor/ulefone/metal/metal-vendor.mk)
